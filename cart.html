@@ -1,0 +1,243 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Cart - Mr Gadget</title>
+
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<link href="css\cart.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+
+ 
+<!-- Header -->
+
+   <div class="page-header">
+
+       <!--  Header top -->
+
+       <div class="header-top">
+          <ul class="header-top-left">
+            <li style="border-right: solid 2px #F7FFF7;"><a href="sell.html">Sell With us</a></li>
+            <li style="border-right: solid 2px #F7FFF7;"><a href="howto.html">How to buy</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+          <ul class="header-search">
+              <form action="products.html">
+                   <input type="text" placeholder="Search Here.." name="search">
+                   <button type="submit"><i class="material-icons" style="color: #1A535C;">search</i></button>
+              </form>
+          </ul>
+          <ul class="header-top-right">
+             <li class="header-signin"><a href="signin.html">Sign In</a></li>
+             <li class="header-cart"><a href="cart.html"><span><i class="material-icons">add_shopping_cart</i></span></a></li>
+             <li class="header-member"><a href="member.html"><i class="material-icons">account_circle</i></a></li>
+          </ul>
+
+       </div>
+
+       <!--  Header Main Contents  -->
+
+       <div class="header-bottom">
+           <div class="header-category" onclick="showCategory()">
+             <span class="material-icons">menu</span>
+           </div>  
+           <div class="header-logo">
+            <a href="home.html"><img src="logo2.jpg" width="150px" height="100px"></a>
+           </div> 
+           <div class="header-nav">
+            <ul>
+              <li>
+                <a class="header-btn" href="home.html"><i class="material-icons">home</i><span class="nav-span">Home</span></a>
+                <div style="display: block; width: 100%; height: 50px; ">
+              </li>
+              <li>
+                <a onmouseover="chdp('block')" onmouseout="chdp('none')" class="header-btn" href="products.html"><i class="material-icons">inventory_2</i><span class="nav-span">Products</span></a>
+              </li>
+              <li>
+                <a class="header-btn" class="header-btn" href="events.html"><i class="material-icons">event</i><span class="nav-span"><span class="nav-span">Events</span></a>
+                
+              </li>
+              <li>
+                <a class="header-btn" href="about.html" ><i class="material-icons">group</i><span class="nav-span">About us</span></a>
+                
+              </li>
+             
+            </ul>
+           </div> 
+
+       </div> 
+   
+
+
+     </div>
+
+
+
+<!-- End of Header -->
+
+   <div id="product-dropdown" onmouseover="chdp('block')" onmouseout="chdp('none')"  class="header-dropdown-content">
+      <li>
+        <h4>Computer & Laptops</h4>
+        <a href="##">Laptops & Netbooks</a>
+        <a href="##">Software</a>
+        <a href="##">Tablets/Ipads/Ebook</a>
+        <a href="##">Computer Hardwares</a>
+        <a href="##">Others</a>
+
+      </li>
+      <li>
+        <h4>Mobiles</h4>
+        <a href="##">Cell Phone</a>
+        <a href="##">Android Phone</a>
+        <a href="##">iPhone</a>
+        <a href="##">Mobile Accessories</a>
+
+      </li>
+      <li>
+        <h4>Camera & Photography</h4>
+        <a href="##">Camera</a>
+        <a href="##">Camera Accessories</a>
+        <a href="##">Drone</a>
+        <a href="##">Drone Accessories</a>
+        <a href="##">Security Cameras</a>
+
+      </li>
+      <li>
+        <h4>Gaming</h4>
+        <a href="##">Consoles</a>
+        <a href="##">Gaming Laptops</a>
+        <a href="##">Games</a>
+        <a href="##">Gaming Accessories</a>
+
+      </li>
+   </div>
+
+<!-- Main Contents -->
+
+<!--page content-->
+	<div id="cart-container">
+		<div class="cart-header">
+			<h3 class="heading">Shopping Cart</h3>
+			<span class="material-icons">shopping_cart</span>
+			<button class="action" value="Remove All" align="right" onclick="#">Remove All</button>
+		</div>
+		
+		<table style="width:95%" align="center">
+			<tr>
+				<th>Product</th>
+				<th>Description</th>
+				<th>Quantity</th>
+				<th>Price</th>
+			</tr>
+			
+			<tr>
+				<td><img class="imgTable" src="images\mouse.jpeg"/></td>
+				<td class="description">USB Mouse </br></br> 4TECH </td>
+				<td class="qty"><input type="number" value="1"/></td>
+				<td class="price">
+					<div class="prices">
+						<div class="amount">Rs 250</div>
+						<div class="save"><button class="action"><u>Save for later</u></button></div>
+						<div class="remove"><button class="action"><u>Remove</u></button></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><img class="imgTable" src="images\keyboard.jpeg"/></td>
+				<td class="description">Keyboard </br></br> 4TECH </td>
+				<td class="qty"><input type="number" value="2"/></td>
+				<td class="price">
+					<div class="prices">
+						<div class="amount">Rs 400</div>
+						<div class="save"><button class="action"><u>Save for later</u></button></div>
+						<div class="remove"><button class="action"><u>Remove</u></button></div>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3">
+					<button id="btnProceed" value="proceed" onclick="#">Proceed</button>
+				</td>
+				<th style="border:0px;background: linear-gradient(to bottom right, #ccf0ec, #FAFCFF);"> 
+					 <div class="checkout" style="padding-left:-10px;">	 						
+						<p>Total : <u> Rs 650</u></p> 
+					</div>
+				</th>
+			</tr>
+			
+		</table>
+		
+		
+	</div>
+
+
+<!-- Footer -->      
+
+   <div class="page-footer">
+     
+    <ul>
+      <div class="page-footer-main">
+      <div class="page-footer-name">
+
+        <div class="page-footer-name-top">          
+          <a href="home.html"><img src="logo2.jpg" width="100%" height="50px"></a>
+        </div>
+        <div class="page-footer-name-middle">
+          <p>Mr Gadget is an online electronic Mauritius-based shop where you can buy and sell a variety of digital products and accessories at any time.</p>
+        </div>
+        <div class="page-footer-name-bottom">
+             
+        </div>      
+
+      </div>
+      <div class="page-footer-link">
+
+        <div class="page-footer-link-top">
+          <h2>Quick Links</h2>
+        </div>
+        
+        <div class="page-footer-link-bottom">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>  
+
+
+      </div>
+      <div class="page-footer-contact">
+
+        <div class="page-footer-contact-top">
+          <h2>Get In Touch</h2>
+        </div>
+        
+        <div class="page-footer-contact-bottom">
+          <ul>
+            <li><p style="margin-top: 0;">2nd Floor Phase 2, University Of Mauritius, Reduit</p></li>
+            <li><a href="mailto:contact@mrgadget.mu">contact@mrgadget.mu</a></li>
+            <li><a href="tel:+230 55550000">+230 55550000</a></li>
+          </ul>
+        </div>  
+        
+      </div>  
+      </div>  
+    </ul>
+    <ul>
+      <div class="page-footer-bottom">
+      <p>© 2021 - Mr Gadget</p>
+      </div>  
+    </ul>
+
+    
+   </div>
+
+
+</body>
+</html>   

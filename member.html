@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Member's Corner - Mr Gadget</title>
+	<!--browser displays website according to device.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<link href="css\member.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+
+ 
+<!-- Header -->
+
+   <div class="page-header">
+
+       <!--  Header top -->
+
+       <div class="header-top">
+          <ul class="header-top-left">
+            <li style="border-right: solid 2px #F7FFF7;"><a href="sell.html">Sell With us</a></li>
+            <li style="border-right: solid 2px #F7FFF7;"><a href="howto.html">How to buy</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+          <ul class="header-search">
+              <form action="products.html">
+                   <input type="text" placeholder="Search Here.." name="search">
+                   <button type="submit"><i class="material-icons" style="color: #1A535C;">search</i></button>
+              </form>
+          </ul>
+          <ul class="header-top-right">
+             <li class="header-signin"><a href="signin.html">Sign In</a></li>
+             <li class="header-cart"><a href="cart.html"><span><i class="material-icons">add_shopping_cart</i></span></a></li>
+             <li class="header-member"><a href="member.html"><i class="material-icons">account_circle</i></a></li>
+          </ul>
+
+       </div>
+
+       <!--  Header Main Contents  -->
+
+       <div class="header-bottom">
+           <div class="header-category" onclick="showCategory()">
+             <span class="material-icons">menu</span>
+           </div>  
+           <div class="header-logo">
+            <a href="home.html"><img src="logo2.jpg" width="150px" height="100px"></a>
+           </div> 
+           <div class="header-nav">
+            <ul>
+              <li>
+                <a class="header-btn" href="home.html"><i class="material-icons">home</i><span class="nav-span">Home</span></a>
+                <div style="display: block; width: 100%; height: 50px; ">
+              </li>
+              <li>
+                <a onmouseover="chdp('block')" onmouseout="chdp('none')" class="header-btn" href="products.html"><i class="material-icons">inventory_2</i><span class="nav-span">Products</span></a>
+              </li>
+              <li>
+                <a class="header-btn" class="header-btn" href="events.html"><i class="material-icons">event</i><span class="nav-span"><span class="nav-span">Events</span></a>
+                
+              </li>
+              <li>
+                <a class="header-btn" href="about.html" ><i class="material-icons">group</i><span class="nav-span">About us</span></a>
+                
+              </li>
+             
+            </ul>
+           </div> 
+
+       </div> 
+   
+
+
+     </div>
+
+
+
+<!-- End of Header -->
+
+   <div id="product-dropdown" onmouseover="chdp('block')" onmouseout="chdp('none')"  class="header-dropdown-content">
+      <li>
+        <h4>Computer & Laptops</h4>
+        <a href="##">Laptops & Netbooks</a>
+        <a href="##">Software</a>
+        <a href="##">Tablets/Ipads/Ebook</a>
+        <a href="##">Computer Hardwares</a>
+        <a href="##">Others</a>
+
+      </li>
+      <li>
+        <h4>Mobiles</h4>
+        <a href="##">Cell Phone</a>
+        <a href="##">Android Phone</a>
+        <a href="##">iPhone</a>
+        <a href="##">Mobile Accessories</a>
+
+      </li>
+      <li>
+        <h4>Camera & Photography</h4>
+        <a href="##">Camera</a>
+        <a href="##">Camera Accessories</a>
+        <a href="##">Drone</a>
+        <a href="##">Drone Accessories</a>
+        <a href="##">Security Cameras</a>
+
+      </li>
+      <li>
+        <h4>Gaming</h4>
+        <a href="##">Consoles</a>
+        <a href="##">Gaming Laptops</a>
+        <a href="##">Games</a>
+        <a href="##">Gaming Accessories</a>
+
+      </li>
+   </div>
+
+<!-- Main Contents -->
+
+<!--page content-->
+	<h1 class="headings" style="font-family:Serif;">User Profile</h1>
+	<div class="wrapper">
+		<div class="link-container">
+		<span id="iconLink" class="material-icons">description</span>
+			<nav>
+				<ul id="linkUL">
+					<li class="links">
+						<a title="Display Personal details" href="#" onclick="display('personalDetails');return false;">Personal Details</a>
+					</li>
+					<li class="links">
+						<a title="Display Previous Purchases" href="#" onclick="display('purchases');return false;">Previous Purchases</a>
+					</li>
+					<li class="links">
+						<a title="Display Billing Details" href="#" onclick="display('billing');return false;">Billing Details</a>
+					</li>
+					<li class="links">
+						<a title="Display Account Settings" href="#" onclick="display('settings');return false;">Account Settings</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		
+		<div id="display-container"></div>	
+	</div>
+	
+	<div id="personalDetails">	
+		<div>
+			<h2 class="headings"><i>Personal Details</i></h2>
+			
+				<div id="wrapperName">
+					<div id="img-container">
+						<img class="imgTable" src="images\member.png"/>
+					</div>
+					
+					<div id="name-container">
+						<p>
+							<span class="head">First Name : </span> 
+							Kishanlall
+						</p>
+						<p>
+							<span class="head">Last Name : </span> 
+							Kassinathdoss
+						</p>						
+					</div>
+				</div>
+				
+				<div id="container2">
+					<p>
+						<span class="head">Email : </span> 
+						<a href="mailto:kishanlall.kassinathdoss@umail.uom.ac.mu">kishanlall.kassinathdoss@umail.uom.ac.mu</a></br>
+					</p>
+					<p>
+						<span class="head">Date Of Birth : </span>
+						<span>04-May-2002</span>
+					</p>
+					<p>
+						<span class="head">Age : </span>
+						<span>19 Years Old</span>
+					</p>
+				</div>
+				
+				<div id="container3">
+					<button class="btnProfile" onclick="###">Edit Details</button>
+				</div>
+			
+		</div>
+	</div>		
+	<div id="purchases">
+		<h2 class="headings"><i>Previous Purchases</i></h2>
+	</div>
+
+	<div id="billing">
+		<h2 class="headings"><i>Billing Details</i></h2>
+		<div id="img-container">
+			<img class="imgTable" src="images\card.jpg"/>
+		</div>
+		
+		<div id="container2">
+			<p>
+				<span class="head">Card Number : </span> 
+				<span>**** ***** **** 1234</span>
+			</p>
+			<p>
+				<span class="head">Expiry Date: </span>
+				<span>04-May-2030</span>
+			</p>
+		</div>
+				
+		<div id="container3">
+			<button class="btnProfile" onclick="###" style="margin-bottom:10px;">Add Payment Method</button>
+			<button class="btnProfile" onclick="###">Remove Payment Method</button>
+		</div>
+		
+	</div>	
+	<div id="settings">
+		<h2 class="headings"><i>Account Settings</i></h2>
+		<div id="btn-container">
+			<ul>
+				<li class="linksAcc">
+					<a href="#" onclick="#">Change Personal Details</a>
+				</li>
+				<li class="linksAcc">
+					<a href="#" onclick="#">Redeem Coupon</a>
+				</li>
+				<li class="linksAcc">
+					<a  href="#" onclick="#">Payment methods</a>
+				</li>
+				<li class="linksAcc">
+					<a href="#" onclick="#">General settings</a>
+				</li>
+				<li class="linksAcc">
+					<a href="#" onclick="#">Deactivate Account</a>
+				</li>
+				<li class="linksAcc">
+					<a  href="#" onclick="#">Log Out</a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+<!-- Footer -->      
+
+   <div class="page-footer">
+   	 
+   	<ul>
+   	  <div class="page-footer-main">
+   	 	<div class="page-footer-name">
+
+   	 		<div class="page-footer-name-top">          
+   	 			<a href="home.html"><img src="logo2.jpg" width="100%" height="50px"></a>
+   	 		</div>
+   	 		<div class="page-footer-name-middle">
+   	 			<p>Mr Gadget is an online electronic Mauritius-based shop where you can buy and sell a variety of digital products and accessories at any time.</p>
+   	 		</div>
+   	 		<div class="page-footer-name-bottom">
+             
+   	 		</div>    	
+
+   	 	</div>
+   	 	<div class="page-footer-link">
+
+   	 		<div class="page-footer-link-top">
+   	 			<h2>Quick Links</h2>
+   	 		</div>
+   	 		
+   	 		<div class="page-footer-link-bottom">
+   	 			<ul>
+   	 				<li><a href="home.html">Home</a></li>
+   	 				<li><a href="products.html">Products</a></li>
+   	 				<li><a href="about.html">About Us</a></li>
+   	 				<li><a href="events.html">Events</a></li>
+   	 			</ul>
+   	 		</div>	
+
+
+   	 	</div>
+   	 	<div class="page-footer-contact">
+
+   	 		<div class="page-footer-contact-top">
+   	 			<h2>Get In Touch</h2>
+   	 		</div>
+   	 		
+   	 		<div class="page-footer-contact-bottom">
+   	 			<ul>
+   	 				<li><p style="margin-top: 0;">2nd Floor Phase 2, University Of Mauritius, Reduit</p></li>
+   	 				<li><a href="mailto:contact@mrgadget.mu">contact@mrgadget.mu</a></li>
+   	 				<li><a href="tel:+230 55550000">+230 55550000</a></li>
+   	 			</ul>
+   	 		</div>	
+   	 		
+   	 	</div>	
+   	  </div>	
+   	</ul>
+   	<ul>
+   	  <div class="page-footer-bottom">
+   	 	<p>© 2021 - Mr Gadget</p>
+   	  </div>	
+   	</ul>
+
+   	
+   </div>
+
+
+</body>
+</html>   
+
